@@ -42,7 +42,8 @@ window.onload = function(){
 
     var ul = $('.starList'),
         result = $('.resultShow'),
-        tip = $('.tips'),tipScore = $('.tip-score'),tipDesc = $('.tip-describe');
+        tip = $('.tips'),tipScore = $('.tip-score'),tipDesc = $('.tip-describe'),
+        firstVisited = false;
     //操作：1.hover时,li类型变化及tip的提示
     /*addEvent(ul, 'mouseover', function(event){
         var target = event.target, num,i ;
@@ -77,7 +78,7 @@ window.onload = function(){
 
     ['mouseover','mouseout','click'].forEach(function(type, index){
         addEvent(ul,type,function() {
-            var target = event.target, num, i, firstVisited = false,
+            var target = event.target, num, i,
                 liClassName = type == 'mouseleave' ? '' : 'selected';
 
 
