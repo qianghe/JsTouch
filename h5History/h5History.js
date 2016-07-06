@@ -1,4 +1,3 @@
-var template = require('art-template');
 
 window.onload = function(){
     //元素选择器
@@ -32,30 +31,27 @@ window.onload = function(){
     };
 
     var tabTable = {
-        leftMenuArr:[],
-        rightListSource: [],
         config: {},
         init: function(config){
             this.config = config;
-            this.leftMenuArr = config.leftMenuArr;
-            this.rightListSource = config.rightListSource;
 
-            this.renderView();
+            this.renderView(false);
             this.bindEvent();
         },
 
         getActiveAreaInfo:function(){
-            var $activeLi = $('.areaMenu').getElementsByClassName('active');
-            return  {tag: $activeLi.attr('data-areaTag'),name: $activeLi.text()};
+            var $activeLi = $('.areaMenu').getElementsByClassName('active')[0];
+            var name = $activeLi.innerHTML.split('<')[0];
+            return  {tag: $activeLi.getAttribute('data-areaTag'),name: name};
 
         },
-        renderView: function(){
+        renderView: function(flag){
             this.renderLeftMenu();
-            this.renderRightDetail();
+            this.renderRightDetail(flag);
         },
 
         renderLeftMenu: function(){
-            var leftMenuHtml = template('./h5HistoryTpl/areaMenu',this.leftMenuArr);
+            var leftMenuHtml = template('areaMenu',this.config.leftMenuArr);
 
             $('.areaMenu').innerHTML = leftMenuHtml;
 
@@ -65,38 +61,42 @@ window.onload = function(){
                 for(i =0; i<lis.length ; i++){
                     var $curLi = lis[i];
                     $curLi.className = '';
-                    if(config == $curLi.attr('data-tag')){
+                    if(config.activeTag == $curLi.getAttribute('data-areatag')){
                         $curLi.className = 'active';
+                        break;
                     }
                 }
             }
         },
 
-        renderRightDetail: function(){
-            var rightDetaiHtml = template('./h5History/areaDetail', this.rightListSource[this.getActiveAreaName().tag]);
-
+        renderRightDetail: function(flag){
+            var rightDetaiHtml = template('areaDetail', this.config.rightListSource[this.getActiveAreaInfo().tag]);
             $('.areaDetail').innerHTML = rightDetaiHtml;
 
-            this.modifyState();
+            if(flag) this.modifyState();
         },
 
         modifyState: function(){
             var activeAreaInfo = this.getActiveAreaInfo();
             history.pushState({
-                title:'上海3月开盘项目汇总-' + activeAreaInfo.name
+                tag :  activeAreaInfo.tag
             },document.title,window.location.pathname + '?area='+activeAreaInfo.tag);
+
+            document.title =  '上海3月开盘项目汇总-' + activeAreaInfo.name;
         },
+
         bindEvent: function(){
-            addEventListener('.areaMenu','click',function(event){
+            var that = this;
+            addEventListener($('.areaMenu'),'click',function(event){
                 var elem = event.target,
                     activeTag, activeName;
                 if(elem.tagName.toLowerCase() == 'li'){
-                    var preActive = $('.areaMenu').getElementsByClassName('active');
+                    var preActive = $('.areaMenu').getElementsByClassName('active')[0];
                     preActive.className = '';
 
                     elem.className = 'active';
 
-                    this.renderRightDetail();
+                    that.renderRightDetail(true);
                 }
             })
         }
@@ -106,19 +106,34 @@ window.onload = function(){
 
     //修改url,进行pushstate操作
     var queryArr= window.location.search.substring(1).split('&');
-    if(queryArr.length > 1 || queryArr.length == 0){
-        history.pushState({
-            title:'上海3月开盘项目汇总-浦东区'
-        },document.title,window.location.pathname + '?area=pudong');
+
+    if(queryArr.length ==1 && queryArr[0] != ""){
+        config.activeTag = queryArr[0].split('=')[1];
+
     }else{
-        config.activeTag = queryArr.split('=')[1];
+        history.pushState({
+            title:'上海3月开盘项目汇总-浦东',
+            tag : 'pudong'
+        },document.title,window.location.pathname + '?area=pudong');
     }
 
-    loadJSON('./data/data.json',function(response){
+    loadJSON('./data.json',function(response){
+        var res = JSON.parse(response);
 
+        config.leftMenuArr = res.leftMenuArr;
+        config.rightListSource = res.rightListSource.data[0];
+
+        //进行页面的初始化
+        tabTable.init(config);
     });
 
+    //监听浏览器前进／后退及无刷新时的URL
+    window.addEventListener("popstate", function () {
+        tabTable.config.activeTag = history.state.tag;
 
-    //进行页面的初始化
-    tabTable.init(config);
+        tabTable.renderView(false);
+
+        document.title =  '上海3月开盘项目汇总-' + history.state.tag;
+    })
+
 }

@@ -1,5 +1,5 @@
 {
-  "leftMenu":{
+  "leftMenuArr":{
     "data":[
       {"areaTag":"pudong","areaName":"浦东","areaNum":"8"},
       {"areaTag":"baoshan","areaName":"宝山","areaNum":"7"},
@@ -10,14 +10,14 @@
       {"areaTag":"jinshan","areaName":"金山","areaNum":"3"},
       {"areaTag":"songjiang","areaName":"松江","areaNum":"3"},
       {"areaTag":"zhabei","areaName":"闸北","areaNum":"1"},
-      {"areaTag":"fenxian","areaName":"奉贤","areaNum":"5"},
+      {"areaTag":"fengxian","areaName":"奉贤","areaNum":"5"},
       {"areaTag":"huangpu","areaName":"黄埔","areaNum":"1"},
       {"areaTag":"changning","areaName":"长宁","areaNum":"1"},
       {"areaTag":"jingan","areaName":"静安","areaNum":"1"},
       {"areaTag":"shanghaizhoubian","areaName":"上海周边","areaNum":"1"}
     ]
   },
-  "rightDetailArr":{
+  "rightListSource":{
     "data":[
       {
         "pudong":{

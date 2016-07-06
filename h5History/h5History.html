@@ -3,14 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>上海三月开盘项目汇总-浦东区</title>
+    <link href="h5History.css" type="text/css" rel="stylesheet"/>
+    <script src="../commen/lib/template.js" type="text/javascript"></script>
+    <script src="h5History.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="wrapper">
         <h3 class="title">上海三月开盘汇总</h3>
-        <div class="projectTable">
+        <div class="projectTable clearfix">
             <div class="areaMenu"></div>
             <div class="areaDetail"></div>
         </div>
     </div>
 </body>
+
+<script id="areaMenu" type="text/html">
+    <ul class="menuList">
+        {{each data as area index}}
+        {{if index == 0}}
+        <li data-areaTag="{{area.areaTag}}" class="active" >{{area.areaName}}<span class="areaHouseNum">{{area.areaNum}}</span></li>
+        {{else}}
+        <li data-areaTag="{{area.areaTag}}">{{area.areaName}}<span class="areaHouseNum">{{area.areaNum}}</span></li>
+        {{/if}}
+        {{/each}}
+    </ul>
+</script>
+
+<script id="areaDetail" type="text/html">
+    <ul class="detailList">
+        <li class="listTitle">
+            <span>楼盘名</span>
+            <span>价格</span>
+            <span>项目地址</span>
+        </li>
+        {{each list as detail}}
+        <li>
+            <span>{{detail.name}}</span>
+            <span>{{detail.price}}</span>
+            <span>{{detail.address}}</span>
+        </li>
+        {{/each}}
+    </ul>
+</script>
 </html>

@@ -3,7 +3,18 @@
 $rightTableColor: #ebebeb;
 $leftMenuColor: #f9f9f9;
 $leftMenuActiveColor : #a0a0a0;
-$tableColumnWidth: (20%,30% 50%);
+$leftMenuHoverColor :#666;
+$tableColumnWidth: (20%, 30%, 45%);
+
+@mixin commenLiStyle($bgColor){
+  display: block;
+  width: 100%;
+  padding-left: 30px;
+  font-size: 13px;
+  line-height: 30px;
+  box-sizing: border-box;
+  background-color: $bgColor;
+}
 
 /*
 ** the wrapper resize the whole screen
@@ -13,6 +24,7 @@ $tableColumnWidth: (20%,30% 50%);
   height: 100%;
   box-sizing: content-box;
   padding: 15px;
+  background-color: $leftMenuColor;
 
   .title{
     width: 100%;
@@ -20,21 +32,28 @@ $tableColumnWidth: (20%,30% 50%);
     text-align: center;
   }
 }
+
+.projectTable{
+  height: 500px;
+}
 /*
 ** the left mebu
 */
 .areaMenu{
+  float: left;
+  width: 20%;
+  height: 100%;
 
   li{
-    display: block;
-    width: 25%;
-    padding-left: 15px;
-    line-height: 20px;
-    background-color: $leftMenuColor;
-
+    @include commenLiStyle($leftMenuColor);
+    box-shadow: 0 0 0 1px #fff;
 
     .areaHouseNum{
-      margin-left: 15px;
+      margin-left: 40px;
+    }
+
+    &:hover{
+      background-color: $leftMenuHoverColor;
     }
   }
 
@@ -47,27 +66,19 @@ $tableColumnWidth: (20%,30% 50%);
 ** the right content tab
 */
 .areaDetail{
+  float: left;
   width: 72%;
   height: 100%;
-  padding-left: 10px;
   background-color: $rightTableColor;
 
   li{
-    display: block;
-    width: 100%;
-    height: 20px;
+    @include commenLiStyle($rightTableColor);
     border-bottom: 1px solid #a0a0a0;
   }
 
- /* @each $columnWidth in $tableColumnWidth{
-    $i: index($columnWidth, $tableColumnWidth);
-    span:nth-of-type(#{$i}){
-      width: $columnWidth;
-    }
-  }*/
-
   @for $i from 1 through length($tableColumnWidth){
     span:nth-of-type(#{$i}){
+      display: inline-block;
       width: nth($tableColumnWidth, $i);
     }
   }

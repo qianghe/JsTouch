@@ -1,10 +1,11 @@
 <script id="areaMenu" type="text/html">
     <ul class="menuList">
-        {{each menuList}}
-            {{if $index == 0}}
-                 <li class="active" data-area={{$value.areaTag}}>{{$value.areaName}}<span class="areaHouseNum">{{$value.areaNum}}</span></li>
+        {{each data as area index}}
+            {{if index == 0}}
+                 <li class="active" data-areaTag="{{area.areaTag}}">{{area.areaName}}<span class="areaHouseNum">{{area.areaNum}}</span></li>
+            {{else}}
+                <li data-areaTag="{{area.areaTag}}">{{area.areaName}}<span class="areaHouseNum">{{area.areaNum}}</span></li>
             {{/if}}
-            <li >{{$value.areaName}}<span class="areaHouseNum">{{$value.areaNum}}</span></li>
         {{/each}}
     </ul>
 </script>
@@ -16,7 +17,7 @@
             <span>价格</span>
             <span>项目地址</span>
         </li>
-        {{each detailList}}
+        {{each list as detail}}
         <li>
             <span>{{detail.name}}</span>
             <span>{{detail.price}}</span>
