@@ -4,13 +4,14 @@ if ( typeof define === "function" && define.amd ) {
     require(['../commen/Util','../commen/lib/template'], function (util,template) {
         var $ = function ($selector) {
             return document.querySelector($selector);
+            document.getElementsByClassName()
         };
 
         var windowWidth = document.body.clientWidth - 20,
             columnNum = 5,
             imgItemWidth , imgItemHeight,
-            columnLefts = [],
-            columnTops = [];
+            columnLefts = [], columnTops = [],
+            $document, $window;
 
 
         init();
@@ -25,7 +26,25 @@ if ( typeof define === "function" && define.amd ) {
                 columnTops[i] = 0;
             }
 
+            //初始化window及document对象
+            
+
+            //加载数据
             loadData();
+
+            //绑定各种事件
+            bindEvent();
+        }
+
+        //绑定事件
+        function bindEvent(){
+            //1.1滚动条事件监听
+             util.addEventListener($(window),'scroll',function(){
+                 if($(window).scrollTop() + $(window).height() == $(document).height()) {
+                     alert("bottom!");
+                 }
+             });
+            //1.2窗口resize事件监听
         }
 
         //加载数据
@@ -59,12 +78,12 @@ if ( typeof define === "function" && define.amd ) {
 
             nodeStyle = container.lastChild.style;
 
-            nodeStyle.height = img.height + 'px';
+            nodeStyle.height = img.height + 20 + 'px';
             nodeStyle.width = imgItemWidth + 'px';
             nodeStyle.top = columnTops[index] + 'px';
             nodeStyle.left = columnLefts[index] + 'px';
 
-            columnTops[index] += img.height;
+            columnTops[index] += img.height + 20;
         }
 
         //获取数组中的最小值

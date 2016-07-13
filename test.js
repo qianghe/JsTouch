@@ -1,23 +1,25 @@
-function foo(param){
-    var count = 0,that = this;
+function solution(number){
+    var preThree = 2, preFive = 1;
+    var totalSum = 0, curNumber = 3;
 
-    console.log(param);
-    return {
-        decrement: function () {
-            that.count--;
-        },
-        increment: function () {
-            that.count++;
-        },
-        getCount: function () {
-            return that.count;
+    while(curNumber <= number){
+        totalSum += curNumber;
+
+        if(preThree * 3 > preFive * 5){
+            curNumber = preFive * 5;
+            preFive++;
+        }else if(preThree * 3 < preFive * 5){
+            curNumber = preThree * 3;
+            preThree++;
+        }else{
+            preThree++;
+            preFive++;
         }
-    };
+    }
+
+    return totalSum;
 }
 
-for(var i =0; i<5;i++){
-    foo(i);
-    foo.increment();
-}
 
-console.log(foo.getCount());
+console.log('total',solution(10));
+

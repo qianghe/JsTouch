@@ -117,6 +117,7 @@ window.onload = function(){
         },document.title,window.location.pathname + '?area=pudong');
     }
 
+    //加载JSON文件
     loadJSON('./data.json',function(response){
         var res = JSON.parse(response);
 
@@ -128,12 +129,14 @@ window.onload = function(){
     });
 
     //监听浏览器前进／后退及无刷新时的URL
-    window.addEventListener("popstate", function () {
-        tabTable.config.activeTag = history.state.tag;
+    if (history.pushState) {
+        window.addEventListener("popstate", function () {
+            tabTable.config.activeTag = history.state.tag;
 
-        tabTable.renderView(false);
+            tabTable.renderView(false);
 
-        document.title =  '上海3月开盘项目汇总-' + history.state.tag;
-    })
+            document.title = '上海3月开盘项目汇总-' + history.state.tag;
+        });
+    }
 
 }

@@ -4,41 +4,71 @@
     <meta charset="UTF-8">
     <title></title>
 </head>
+<style>
+    .haha{
+        width: 10px;
+        height: 20px;
+    }
+   .test{
+       width: 100px;
+       height: 200px;
+       box-sizing: border-box;
+       color: #fff;
+       padding: 10px;
+       text-align: center;
+   }
+    .title{
+        height: 20px;
+        line-height: 20px;
+        font-size: 0.9rem;
+        background: gray;
+    }
+    .content{
+        box-sizing: border-box;
+        height: calc(100% - 20px);
+        font-size: 1.5rem;
+        padding-top: calc(100%/2  - 10px - 0.75rem);
+        padding-bottom: calc(100%/2 - 10px - 0.75rem);
+        background: #000;
+    }
+</style>
 <body>
 <input id="file" type="file">
 <input id="Button1" type="button" value="button" onclick="check()">
+<div class="haha">
+    <div class="test">
+        <div class="content"><h3>123</h3></div>
+        <div class="title">title</div>
+    </div>
+</div>
 </body>
-<script>
-    window.check=function(){
-        var input = document.getElementById("file");
-        if(input.files){
-            //读取图片数据
-            var f = input.files[0];
-            var reader = new FileReader();
-            reader.onload = function (e) {
-                var data = e.target.result;
-                //加载图片获取图片真实宽度和高度
-                var image = new Image();
-                image.onload=function(){
-                    var width = image.width;
-                    var height = image.height;
-                    alert(width+'======'+height+"====="+f.size);
-                };
-                image.src= data;
-            };
-            reader.readAsDataURL(f);
-        }else{
-            var image = new Image();
-            image.onload =function(){
-                var width = image.width;
-                var height = image.height;
-                var fileSize = image.fileSize;
-                alert(width+'======'+height+"====="+fileSize);
+<script type="text/javascript">
+
+    function solution(number){
+        var preThree = 2, preFive = 1;
+        var totalSum = 0, curNumber = 3;
+
+        while(curNumber < number){
+            totalSum += curNumber;
+
+            if(preThree * 3 > preFive * 5){
+                curNumber = preFive * 5;
+                preFive++;
+            }else{
+                curNumber = preThree * 3;
+                preThree++;
+
+                if(preThree * 3 == preFive * 5){
+                    preFive++ ;
+                }
             }
-            image.src = input.value;
         }
 
+        return totalSum;
     }
+
+
+    console.log('total',solution(19));
 
 </script>
 </html>
