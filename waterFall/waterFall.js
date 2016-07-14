@@ -12,10 +12,10 @@ if ( typeof define === "function" && define.amd ) {
             $loading = $('.loading'), $container = $('.wrapper');
             loadFinished = false;
 
-        init();
+        init(false);
 
         //初始化数据
-        function init(){
+        function init(reflow){
             windowWidth = document.body.clientWidth - 20;
             $document = $container.ownerDocument;
             $window = $document.defaultView || $document.parentWindow;
@@ -28,31 +28,40 @@ if ( typeof define === "function" && define.amd ) {
             }
 
 
-            //加载数据
-            loadData(false);
+            if(!reflow) {
+                //加载数据
+                loadData(false);
 
-            //绑定各种事件
-            bindEvent();
+                //绑定各种事件
+                bindEvent();
+            }
         }
 
         //绑定事件
         function bindEvent(){
             //1.1滚动条事件监听
              var $document = $container.ownerDocument,
-                 resizeTimer = null;
+                 resizeTimer = null, scrollTimer = null;
 
-             util.addEventListener($document,'scroll',function(){
-                 if(docParam.getScrollTop() + docParam.getClientHeight() == docParam.getScrollHeight()) {
-                     if(loadFinished) {
-                         loadFinished = false;
-                         toggleClass($loading);
-                         //触发重新加载数据
-                         setTimeout(function () {
-                             loadData(true);
+             util.addEventListener($document,'scroll',function() {
 
-                         }, 1000);
-                     }
+                 if (scrollTimer) {
+                     clearTimeout(scrollTimer);
                  }
+
+                 scrollTimer = setTimeout(function () {
+                     if (docParam.getScrollTop() + docParam.getClientHeight() == docParam.getScrollHeight()) {
+                         if (loadFinished) {
+                             loadFinished = false;
+                             toggleClass($loading);
+                             //触发重新加载数据
+                             setTimeout(function () {
+                                 loadData(true);
+
+                             }, 1000);
+                         }
+                     }
+                 });
              });
 
             //1.2窗口resize事件监听
@@ -61,8 +70,23 @@ if ( typeof define === "function" && define.amd ) {
                     clearTimeout(resizeTimer)
                 }
                 resizeTimer = setTimeout(function(){
-                    console.log('init function');
-                    init();
+                    var children = $container.children;
+
+                    init(true);
+
+                    children = Array.prototype.slice.call(children, 0);
+                    console.log(children);
+
+
+                    children.forEach(function(child){
+                        var img = {};
+                        img.height = child.style.height;
+                        img.src = child.querySelector('h3').innerHTML;
+                        img.title = child.querySelector('.imgTitle').innerHTML;
+
+                        renderImgItem(img);
+                    });
+
                 }, 400);
             });
         }
