@@ -5,70 +5,47 @@
     <title></title>
 </head>
 <style>
-    .haha{
-        width: 10px;
-        height: 20px;
+    .wrapper{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-flex-flow: row wrap;
+        justify-content: space-around;
     }
-   .test{
-       width: 100px;
-       height: 200px;
-       box-sizing: border-box;
-       color: #fff;
-       padding: 10px;
-       text-align: center;
-   }
-    .title{
-        height: 20px;
-        line-height: 20px;
-        font-size: 0.9rem;
-        background: gray;
-    }
-    .content{
-        box-sizing: border-box;
-        height: calc(100% - 20px);
-        font-size: 1.5rem;
-        padding-top: calc(100%/2  - 10px - 0.75rem);
-        padding-bottom: calc(100%/2 - 10px - 0.75rem);
-        background: #000;
+
+    .item{
+        background: tomato;
+        padding: 5px;
+        width: 200px;
+        height: 150px;
+        margin-top: 10px;
+
+        line-height: 150px;
+        color: white;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
     }
 </style>
 <body>
-<input id="file" type="file">
-<input id="Button1" type="button" value="button" onclick="check()">
-<div class="haha">
-    <div class="test">
-        <div class="content"><h3>123</h3></div>
-        <div class="title">title</div>
-    </div>
-</div>
+    <ul class="wrapper">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+    </ul>
 </body>
 <script type="text/javascript">
 
-    function solution(number){
-        var preThree = 2, preFive = 1;
-        var totalSum = 0, curNumber = 3;
-
-        while(curNumber < number){
-            totalSum += curNumber;
-
-            if(preThree * 3 > preFive * 5){
-                curNumber = preFive * 5;
-                preFive++;
-            }else{
-                curNumber = preThree * 3;
-                preThree++;
-
-                if(preThree * 3 == preFive * 5){
-                    preFive++ ;
-                }
-            }
-        }
-
-        return totalSum;
-    }
-
-
-    console.log('total',solution(19));
 
 </script>
 </html>

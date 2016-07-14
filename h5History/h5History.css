@@ -7,11 +7,28 @@ ul {
   text-decoration: none; }
 
 .clearfix:after {
-  content: ".";
+  visibility: hidden;
   display: block;
-  height: 0;
+  font-size: 0;
+  content: " ";
   clear: both;
-  visibility: hidden; }
+  height: 0; }
+
+.clearfix {
+  display: inline-table; }
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
 
 /*
 ** the wrapper resize the whole screen
