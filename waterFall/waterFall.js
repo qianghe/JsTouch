@@ -6,21 +6,21 @@ if ( typeof define === "function" && define.amd ) {
             return document.querySelector($selector);
         };
 
-        var columnNum = 5,
+        var minColumnNum = 3, imgItemWidth = 230,columnNum = 0,
             windowWidth, imgItemWidth , imgItemHeight,
             columnLefts = [], columnTops = [],
             $loading = $('.loading'), $container = $('.wrapper');
-            loadFinished = false;
+            loadFinished = false , reSizing = false;
 
         init(false);
 
         //初始化数据
         function init(reflow){
-            windowWidth = document.body.clientWidth - 20;
+            windowWidth = document.body.clientWidth;
             $document = $container.ownerDocument;
             $window = $document.defaultView || $document.parentWindow;
 
-            imgItemWidth = windowWidth/ columnNum;
+            columnNum = Math.max(Math.floor((windowWidth - 20) / (imgItemWidth + 20)), minColumnNum);
 
             for(var i = 0; i< columnNum ; i++){
                 columnLefts[i] = imgItemWidth * i;
@@ -51,7 +51,7 @@ if ( typeof define === "function" && define.amd ) {
 
                  scrollTimer = setTimeout(function () {
                      if (docParam.getScrollTop() + docParam.getClientHeight() == docParam.getScrollHeight()) {
-                         if (loadFinished) {
+                         if (loadFinished && !reSizing) {
                              loadFinished = false;
                              toggleClass($loading);
                              //触发重新加载数据
@@ -70,23 +70,29 @@ if ( typeof define === "function" && define.amd ) {
                     clearTimeout(resizeTimer)
                 }
                 resizeTimer = setTimeout(function(){
-                    var children = $container.children;
+                    if(loadFinished) {
+                        reSizing = true;
+                        var children = $container.children, index = 0;
 
-                    init(true);
+                        init(true);
 
-                    children = Array.prototype.slice.call(children, 0);
-                    console.log(children);
+                        children = Array.prototype.slice.call(children, 0);
 
 
-                    children.forEach(function(child){
-                        var img = {};
-                        img.height = child.style.height;
-                        img.src = child.querySelector('h3').innerHTML;
-                        img.title = child.querySelector('.imgTitle').innerHTML;
+                        children.forEach(function (child) {
+                            index = getMinHeightIndex(columnTops);
 
-                        renderImgItem(img);
-                    });
+                            child.style.height = child.offsetHeight + 'px';
+                            child.style.left = index * (imgItemWidth + 20) + 'px';
+                            child.style.top = columnTops[index] + 'px';
+                            columnTops[index] = columnTops[index] + 20 + child.offsetHeight;
 
+                        });
+
+                        $container.height = columnTops[getMaxHeightIndex(index)];
+                    }
+
+                    reSizing = false;
                 }, 400);
             });
         }
