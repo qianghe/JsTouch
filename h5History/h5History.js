@@ -1,23 +1,22 @@
-
-window.onload = function(){
+window.onload = function () {
     //元素选择器
-    var $ = function($selector){
+    var $ = function ($selector) {
         return document.querySelector($selector);
     };
 
     //添加事件监听
-    var addEventListener = function(elem, type, callback){
-        if(elem.addEventListener){
-            elem.addEventListener(type,callback,false);
-        }else if(elem.attachEvent){
-            elem.attachEvent(type,callback);
-        }else{
-            elem[''+ type] = callback;
+    var addEventListener = function (elem, type, callback) {
+        if (elem.addEventListener) {
+            elem.addEventListener(type, callback, false);
+        } else if (elem.attachEvent) {
+            elem.attachEvent(type, callback);
+        } else {
+            elem['' + type] = callback;
         }
     };
 
     //加载json数据
-    var  loadJSON = function(filepath,callback) {
+    var loadJSON = function (filepath, callback) {
         var xobj = new XMLHttpRequest();
         xobj.overrideMimeType("application/json");
         xobj.open('GET', filepath, true); // Replace 'my_data' with the path to your file
@@ -30,38 +29,46 @@ window.onload = function(){
         xobj.send(null);
     };
 
+    //替换URL查询参数
+    function replaceParam(param, newVal) {
+        var url = window.location.href;
+        //(&|$)表示之前被匹配的字符串之后是&或者$
+        var tmpRegex = new RegExp("(" + param + "=)[a-z|A-Z]+(&|$)", 'ig');
+        url.replace(tmpRegex, '$1'+ newVal);
+    }
+
     var tabTable = {
         config: {},
-        init: function(config){
+        init: function (config) {
             this.config = config;
 
             this.renderView(false);
             this.bindEvent();
         },
 
-        getActiveAreaInfo:function(){
+        getActiveAreaInfo: function () {
             var $activeLi = $('.areaMenu').getElementsByClassName('active')[0];
             var name = $activeLi.innerHTML.split('<')[0];
-            return  {tag: $activeLi.getAttribute('data-areaTag'),name: name};
+            return {tag: $activeLi.getAttribute('data-areaTag'), name: name};
 
         },
-        renderView: function(flag){
+        renderView: function (flag) {
             this.renderLeftMenu();
             this.renderRightDetail(flag);
         },
 
-        renderLeftMenu: function(){
-            var leftMenuHtml = template('areaMenu',this.config.leftMenuArr);
+        renderLeftMenu: function () {
+            var leftMenuHtml = template('areaMenu', this.config.leftMenuArr);
 
             $('.areaMenu').innerHTML = leftMenuHtml;
 
-            if(config.activeTag){
+            if (config.activeTag) {
                 //添加active elem
                 var lis = $('.menuList').children, i;
-                for(i =0; i<lis.length ; i++){
+                for (i = 0; i < lis.length; i++) {
                     var $curLi = lis[i];
                     $curLi.className = '';
-                    if(config.activeTag == $curLi.getAttribute('data-areatag')){
+                    if (config.activeTag == $curLi.getAttribute('data-areatag')) {
                         $curLi.className = 'active';
                         break;
                     }
@@ -69,28 +76,28 @@ window.onload = function(){
             }
         },
 
-        renderRightDetail: function(flag){
+        renderRightDetail: function (flag) {
             var rightDetaiHtml = template('areaDetail', this.config.rightListSource[this.getActiveAreaInfo().tag]);
             $('.areaDetail').innerHTML = rightDetaiHtml;
 
-            if(flag) this.modifyState();
+            if (flag) this.modifyState();
         },
 
-        modifyState: function(){
+        modifyState: function () {
             var activeAreaInfo = this.getActiveAreaInfo();
             history.pushState({
-                tag :  activeAreaInfo.tag
-            },document.title,window.location.pathname + '?area='+activeAreaInfo.tag);
+                tag: activeAreaInfo.tag
+            }, document.title, replaceParam('area',activeAreaInfo.tag));
 
-            document.title =  '上海3月开盘项目汇总-' + activeAreaInfo.name;
+            document.title = '上海3月开盘项目汇总-' + activeAreaInfo.name;
         },
 
-        bindEvent: function(){
+        bindEvent: function () {
             var that = this;
-            addEventListener($('.areaMenu'),'click',function(event){
+            addEventListener($('.areaMenu'), 'click', function (event) {
                 var elem = event.target,
                     activeTag, activeName;
-                if(elem.tagName.toLowerCase() == 'li'){
+                if (elem.tagName.toLowerCase() == 'li') {
                     var preActive = $('.areaMenu').getElementsByClassName('active')[0];
                     preActive.className = '';
 
@@ -105,20 +112,20 @@ window.onload = function(){
     var config = {};
 
     //修改url,进行pushstate操作
-    var queryArr= window.location.search.substring(1).split('&');
+    var queryArr = window.location.search.substring(1).split('&');
 
-    if(queryArr.length ==1 && queryArr[0] != ""){
+    if (queryArr.length == 1 && queryArr[0] != "") {
         config.activeTag = queryArr[0].split('=')[1];
 
-    }else{
+    } else {
         history.pushState({
-            title:'上海3月开盘项目汇总-浦东',
-            tag : 'pudong'
-        },document.title,window.location.pathname + '?area=pudong');
+            title: '上海3月开盘项目汇总-浦东',
+            tag: 'pudong'
+        }, document.title, window.location.search + '?area=pudong');
     }
 
     //加载JSON文件
-    loadJSON('./data.json',function(response){
+    loadJSON('./data.json', function (response) {
         var res = JSON.parse(response);
 
         config.leftMenuArr = res.leftMenuArr;

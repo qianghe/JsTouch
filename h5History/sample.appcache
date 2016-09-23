@@ -2,6 +2,6 @@ CACHE MANIFEST
 #revision 1
 
 CACHE:
-./h5History.js
+,
 ./h5History.css
 ./data.json

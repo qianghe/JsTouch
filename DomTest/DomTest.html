@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <p>You are not alone</p>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        //同域的啥时候,frame父元素可访问子元素,同理,子元素也可以访问父元素
+        //frame父元素访问子元素
+        var parent_win = window.parent,
+                ancestor_win = window.top,
+                self_win = window.self;
+
+        /*var addEventListener = function (elem, type, callback) {
+            if (elem.addEventListener) {
+                elem.addEventListener(type, callback, false);
+            } else if (elem.attachEvent) {
+                elem.attachEvent(type, callback);
+            } else {
+                elem['' + type] = callback;
+            }
+        };
+*/
+        function receiver(e) {
+            console.log(e.origin);
+            if (e.origin == 'http://127.0.0.1') {
+                if (e.data == 'give u a message') {
+                    e.source.postMessage('received', 'http://127.0.0.1/JsTouch/DomTest/iframeUse.html');  //向原网页返回信息
+                } else {
+                    console.log('wrong message',e.data);
+                }
+            }
+        }
+
+        window.addEventListener( 'message', receiver,false);
+    }
+</script>
+</html>

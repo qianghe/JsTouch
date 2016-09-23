@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iframe use</title>
+</head>
+<body>
+
+    <iframe id="iframe_A" name="iframe_A" src="DomTest.html" ></iframe>
+    <iframe id="iframe_B" name="iframe_B" src="http://www.baidu.com" ></iframe>
+</body>
+<script>
+    window.onload = function(){
+        //通过window的frames属性获取iframe
+        var iframeA_win = window.frames['iframe_A'];
+        //通过getElement进行获取
+       /* var window_dom = document.getElementById('iframe_A'),
+                iframeA_doc;
+        iframeA_win = window_dom.contentWindow;
+        iframeA_doc = window_dom.contentDocument;*/
+
+        iframeA_win.postMessage('give u a message','http://127.0.0.1/JsTouch/DomTest/DomTest.html');
+
+        function receiver(e){
+            console.log();
+            if(e.origin.indexOf('http://127.0.0.1') > 0){
+            }
+        }
+        window.addEventListener('message',receiver,false);
+
+    }
+</script>
+</html>

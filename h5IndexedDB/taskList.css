@@ -1,0 +1,79 @@
+.clearfix:after {
+  content: '';
+  width: 0;
+  height: 0;
+  display: block;
+  clear: both; }
+
+body, div, ul, h1 ~ h5, p {
+  margin: 0;
+  padding: 0; }
+
+textarea:focus {
+  outline: none; }
+
+h1 {
+  text-align: center;
+  padding: 20px; }
+
+.wrap {
+  width: 100%; }
+  .wrap > div {
+    float: left;
+    box-sizing: border-box; }
+
+.todoForm {
+  width: 40%;
+  padding: 15px; }
+  .todoForm textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    resize: none;
+    box-sizing: border-box; }
+    .todoForm textarea:focus {
+      border: 1px solid orangered; }
+  .todoForm .actionBtns {
+    padding-top: 10px;
+    text-align: right; }
+    .todoForm .actionBtns span {
+      display: inline-block;
+      width: 100px;
+      line-height: 12px;
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+      cursor: pointer; }
+  .todoForm .clearBtn {
+    background-color: cornflowerblue; }
+    .todoForm .clearBtn:hover {
+      background-color: powderblue; }
+  .todoForm .addBtn {
+    background-color: orangered; }
+    .todoForm .addBtn:hover {
+      background-color: orange; }
+
+.todoListWrap {
+  width: 60%;
+  padding: 10px 30px; }
+
+.deleteAllBtn {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  color: #666;
+  cursor: pointer; }
+  .deleteAllBtn:hover {
+    color: cornflowerblue; }
+  .deleteAllBtn .delAllIcon {
+    padding-right: 10px; }
+
+.todoList {
+  list-style: none; }
+  .todoList li {
+    padding: 15px 15px 0 15px; }
+  .todoList .delItemIcon {
+    padding-right: 10px; }
+    .todoList .delItemIcon:hover {
+      color: orangered; }
+
+/*# sourceMappingURL=taskList.css.map */
