@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff5c2cf7-2440-4b09-96fc-30897a437dc1" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DomTest/DomTest.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DomTest/iframeUse.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DomTest/js/iframeJs.js" />
@@ -12,7 +13,28 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5IndexedDB/h5IndexedDB.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5IndexedDB/taskList.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/h5IndexedDB/taskList.scss" />
+=======
+<<<<<<< HEAD
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pagination/pagination.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pagination/pagination.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pagination/pagination.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.scss" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Pagination/img/branch1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Pagination/img/branch2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Pagination/img/branch3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Pagination/img/branch4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Pagination/img/branch5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Pagination/img/branch6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Pagination/pagination.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Pagination/pagination.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Pagination/pagination.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/h5History/h5History.html" afterPath="$PROJECT_DIR$/h5History/h5History.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/h5History/h5History.js" afterPath="$PROJECT_DIR$/h5History/h5History.js" />
@@ -37,16 +59,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="h5IndexedDB-taskList.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/h5IndexedDB/h5IndexedDB-taskList.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-9.09804">
               <caret line="32" column="53" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="53" />
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="pagination.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pagination/pagination.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+=======
+      <file leaf-file-name="pagination.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pagination/pagination.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.0">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="h5History.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/h5History/h5History.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -56,12 +95,66 @@
                 <element signature="e#207#461#0" expanded="false" />
                 <element signature="e#1347#3722#0" expanded="false" />
               </folding>
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="pagination.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pagination/pagination.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+=======
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7096774">
+              <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="pagination.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pagination/pagination.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name="h5History.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/h5History/h5History.html">
+=======
+      <file leaf-file-name="waterFall.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/waterFall/waterFall.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="52" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="e#652#1242#0" expanded="false" />
+                <element signature="e#1287#3385#0" expanded="false" />
+                <element signature="e#3433#3894#0" expanded="false" />
+                <element signature="e#3958#4716#0" expanded="false" />
+                <element signature="e#4796#5055#0" expanded="false" />
+                <element signature="e#5131#5385#0" expanded="false" />
+                <element signature="e#5443#5599#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DocParameter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commen/lib/DocParameter.js">
+=======
+      <file leaf-file-name="require.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commen/lib/require.js">
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-15.0">
               <caret line="47" column="59" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
@@ -73,8 +166,15 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="taskList.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/h5IndexedDB/taskList.scss">
+=======
+<<<<<<< HEAD
+=======
+      <file leaf-file-name="Util.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commen/Util.js">
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-7.0392156">
               <caret line="107" column="30" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
@@ -105,6 +205,7 @@
           </provider>
         </entry>
       </file>
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -140,10 +241,18 @@
         <option value="$PROJECT_DIR$/waterFall/waterFall.html" />
         <option value="$PROJECT_DIR$/waterFall/waterFall.scss" />
         <option value="$PROJECT_DIR$/waterFall/waterFall.js" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/test.scss" />
+        <option value="$PROJECT_DIR$/pagination/pagination.js" />
+        <option value="$PROJECT_DIR$/pagination/pagination.scss" />
+        <option value="$PROJECT_DIR$/pagination/pagination.html" />
+=======
         <option value="$PROJECT_DIR$/Pagination/pagination.scss" />
         <option value="$PROJECT_DIR$/Pagination/pagination.js" />
         <option value="$PROJECT_DIR$/Pagination/pagination.html" />
         <option value="$PROJECT_DIR$/test.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/JsPatterns/SubscribeAndPublish.js" />
         <option value="$PROJECT_DIR$/commen/lib/require.js" />
         <option value="$PROJECT_DIR$/DomTest/someDomFun.js" />
@@ -161,6 +270,9 @@
         <option value="$PROJECT_DIR$/h5IndexedDB/taskList.scss" />
         <option value="$PROJECT_DIR$/h5IndexedDB/taskList.js" />
         <option value="$PROJECT_DIR$/h5IndexedDB/h5IndexedDB.js" />
+=======
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
       </list>
     </option>
   </component>
@@ -172,8 +284,18 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-5" />
     <option name="y" value="23" />
+<<<<<<< HEAD
     <option name="width" value="1289" />
     <option name="height" value="777" />
+=======
+<<<<<<< HEAD
+    <option name="width" value="1265" />
+    <option name="height" value="709" />
+=======
+    <option name="width" value="1276" />
+    <option name="height" value="712" />
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -220,6 +342,72 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+<<<<<<< HEAD
+=======
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JsTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JsTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="waterFall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+<<<<<<< HEAD
+=======
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JsTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JsTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pagination" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JsTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JsTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JsTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JsTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
         </subPane>
       </pane>
     </panes>
@@ -227,17 +415,27 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$USER_HOME$/node_modules/sass/lib/sass.js" />
+=======
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$USER_HOME$/MLS" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spa" />
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
-    <property name="FullScreen" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
+=======
       <recent name="$PROJECT_DIR$/Pagination/img" />
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
       <recent name="$PROJECT_DIR$/commen/css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -308,34 +506,55 @@
       <option name="number" value="Default" />
       <updated>1463797000093</updated>
       <workItem from="1468372635538" duration="17891000" />
-      <workItem from="1468492650025" duration="937000" />
+      <workItem from="1468492650025" duration="7398000" />
+      <workItem from="1468837131075" duration="2961000" />
+      <workItem from="1469065759188" duration="2570000" />
+      <workItem from="1469413373347" duration="44000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18828000" />
+    <option name="totallyTimeSpent" value="30864000" />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-5" y="23" width="1289" height="777" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2086889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+<<<<<<< HEAD
+    <frame x="0" y="23" width="1265" height="709" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21343873" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+    <frame x="0" y="23" width="1276" height="712" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21081504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19491525" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2641243" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2643857" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -406,7 +625,23 @@
     <entry file="file://$PROJECT_DIR$/starScore/starScore.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+=======
+          <caret line="64" column="55" selection-start-line="64" selection-start-column="55" selection-end-line="64" selection-end-column="55" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="e#652#1242#0" expanded="false" />
+            <element signature="e#1287#3385#0" expanded="false" />
+            <element signature="e#3433#3894#0" expanded="false" />
+            <element signature="e#3958#4716#0" expanded="false" />
+            <element signature="e#4796#5055#0" expanded="false" />
+            <element signature="e#5131#5385#0" expanded="false" />
+            <element signature="e#5443#5599#0" expanded="false" />
+          </folding>
+=======
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
         </state>
       </provider>
     </entry>
@@ -552,14 +787,25 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Pagination/pagination.js">
+=======
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/h5History/h5History.css">
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.024390243">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Pagination/pagination.html">
+=======
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
+    <entry file="file://$PROJECT_DIR$/commen/lib/template.js">
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18292683">
           <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
@@ -593,7 +839,13 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/DomTest/js/someDomFun.js">
+=======
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/h5History/h5History.scss">
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
@@ -601,7 +853,12 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/DomTest/iframeUse.html">
+=======
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
+    <entry file="file://$PROJECT_DIR$/h5History/data.json">
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.625">
           <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
@@ -617,7 +874,13 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+=======
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/h5History/h5History.js">
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1020" column="0" selection-start-line="1020" selection-start-column="0" selection-end-line="1020" selection-end-column="0" />
@@ -625,7 +888,12 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/waterFall/waterFall.js">
+=======
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
+    <entry file="file://$PROJECT_DIR$/h5History/h5History.html">
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="49" />
@@ -651,6 +919,10 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="135">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+=======
         <state vertical-scroll-proportion="0.0">
           <caret line="695" column="0" selection-start-line="695" selection-start-column="0" selection-end-line="695" selection-end-column="0" />
           <folding />
@@ -678,19 +950,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/h5History/h5History.scss">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="-8.75">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.64285713">
+          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/commen/lib/jQuery.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.3323124">
           <caret line="3132" column="8" selection-start-line="3132" selection-start-column="8" selection-end-line="3132" selection-end-column="8" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
+=======
+        <state vertical-scroll-proportion="0.5851064">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
         </state>
       </provider>
     </entry>
@@ -699,25 +984,89 @@
         <state vertical-scroll-proportion="0.11432927">
           <caret line="5" column="95" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="95" />
           <folding />
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DomTest/DomTest.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="-17.958334">
           <caret line="33" column="50" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="50" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="1230">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waterFall/waterFall.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+=======
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
           <folding />
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/h5History/h5History.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="-15.0">
           <caret line="47" column="59" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
           <folding>
             <element signature="n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
           </folding>
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="210">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h5History/h5History.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h5History/h5History.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h5History/h5History.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="3" selection-start-column="3" selection-end-line="5" selection-end-column="6" />
+=======
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
         </state>
       </provider>
     </entry>
@@ -734,21 +1083,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/h5IndexedDB/taskList.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.3597561">
           <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="180">
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#652#1242#0" expanded="false" />
+            <element signature="e#1287#3385#0" expanded="false" />
+            <element signature="e#3433#3894#0" expanded="false" />
+            <element signature="e#3958#4716#0" expanded="false" />
+            <element signature="e#4796#5055#0" expanded="false" />
+            <element signature="e#5131#5385#0" expanded="false" />
+            <element signature="e#5443#5599#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pagination/pagination.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="-5.703704">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/h5IndexedDB/taskList.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.0392156">
           <caret line="107" column="30" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/pagination/pagination.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/commen/Util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/h5IndexedDB/h5IndexedDB-taskList.html">
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/pagination/pagination.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+=======
+    <entry file="file://$PROJECT_DIR$/commen/lib/require.js">
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.09804">
           <caret line="32" column="53" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="53" />
@@ -758,8 +1157,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/h5IndexedDB/taskList.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="-16.37037">
           <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+=======
+        <state vertical-scroll-proportion="0.7096774">
+          <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+>>>>>>> e87c95063e2ba3b3be63e8968be65f256750739d
+>>>>>>> 80d0cd3bb991a8e930802797d1f068ee888e02b7
           <folding />
         </state>
       </provider>
