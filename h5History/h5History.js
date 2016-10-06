@@ -33,8 +33,8 @@ window.onload = function () {
     function replaceParam(param, newVal) {
         var url = window.location.href;
         //(&|$)表示之前被匹配的字符串之后是&或者$
-        var tmpRegex = new RegExp("(" + param + "=)[a-z|A-Z]+(&|$)", 'ig');
-        url.replace(tmpRegex, '$1'+ newVal);
+        var tmpRegex = new RegExp("(" + param + "=)[a-z]+(&|$)", 'ig');
+        return url.replace(tmpRegex, '$1'+ newVal);
     }
 
     var tabTable = {
@@ -88,6 +88,7 @@ window.onload = function () {
             history.pushState({
                 tag: activeAreaInfo.tag
             }, document.title, replaceParam('area',activeAreaInfo.tag));
+            console.log(activeAreaInfo.tag);
 
             document.title = '上海3月开盘项目汇总-' + activeAreaInfo.name;
         },

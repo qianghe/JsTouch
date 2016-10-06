@@ -1,0 +1,93 @@
+body, p, ul, div,
+h1 ~ h5 {
+  padding: 0;
+  margin: 0; }
+
+ul {
+  text-decoration: none; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  display: inline-table; }
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center; }
+
+input:focus {
+  outline: none; }
+
+.hide {
+  display: none; }
+
+.wrap {
+  max-width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 300px;
+  padding: 15px;
+  border: 1px solid #eee;
+  text-align: center; }
+  .wrap .p {
+    color: #666;
+    font-size: 16px; }
+
+.selectWrap {
+  position: relative;
+  margin-top: 30px;
+  margin-left: calc(100%/2 - 200px);
+  text-align: center; }
+  .selectWrap input, .selectWrap span {
+    float: left;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    vertical-align: middle; }
+  .selectWrap .select {
+    width: 350px;
+    border: 1px solid #eee; }
+  .selectWrap .selectList {
+    position: absolute;
+    top: 40px;
+    width: 347px;
+    min-height: 100px;
+    max-height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #eee;
+    border-top: 1px solid transparent;
+    box-shadow: 0 0 10px #eee;
+    color: #999; }
+    .selectWrap .selectList li {
+      text-align: left;
+      padding: 10px 15px;
+      cursor: pointer; }
+      .selectWrap .selectList li:hover {
+        background-color: #eee; }
+  .selectWrap .select_clear {
+    width: 50px;
+    background-color: #eee; }
+  .selectWrap .fa-trash-o {
+    color: #999; }
+
+/*# sourceMappingURL=webWorker.css.map */

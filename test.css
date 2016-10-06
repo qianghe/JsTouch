@@ -1,0 +1,23 @@
+.today_brands_wrap {
+  height: 323px; }
+  .today_brands_wrap .today_brand_show {
+    width: 360px;
+    height: 100%;
+    border: 1px solid #eee;
+    float: left; }
+  .today_brands_wrap .tody_brands_list li {
+    float: left;
+    width: 210px;
+    height: 161px;
+    box-sizing: border-box;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee; }
+    .today_brands_wrap .tody_brands_list li:nth-of-type(n+4) {
+      border-bottom: 1px solid #eee; }
+    .today_brands_wrap .tody_brands_list li a {
+      height: 100%; }
+    .today_brands_wrap .tody_brands_list li img {
+      display: block;
+      margin: 0 auto; }
+
+/*# sourceMappingURL=test.css.map */

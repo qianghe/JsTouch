@@ -1,0 +1,83 @@
+@import "../commen/css/base";
+
+h1{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+input:focus{
+  outline: none;
+}
+
+.hide{
+  display: none;
+}
+
+.wrap{
+  max-width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 300px;
+  padding: 15px;
+  border: 1px solid #eee;
+  text-align: center;
+
+  .p{
+    color: #666;
+    font-size: 16px;
+  }
+}
+
+.selectWrap{
+  position: relative;
+  margin-top: 30px;
+  margin-left: calc(100%/2 - 200px);
+  text-align: center;
+
+  input,span{
+    float: left;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    vertical-align: middle;
+  }
+
+  .select{
+    width: 350px;
+    border: 1px solid #eee;
+  }
+
+  .selectList{
+    position: absolute;
+    top: 40px;
+    width: 347px;
+    min-height: 100px;
+    max-height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #eee;
+    border-top: 1px solid transparent;
+    box-shadow: 0 0 10px #eee;
+    color: #999;
+
+    li{
+      text-align: left;
+      padding: 10px 15px;
+      cursor: pointer;
+
+      &:hover{
+        background-color: #eee;
+      }
+    }
+  }
+
+  .select_clear{
+    width: 50px;
+    background-color: #eee;
+  }
+
+  .fa-trash-o{
+    color: #999;
+  }
+}
+

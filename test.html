@@ -43,15 +43,15 @@
 
 </style>
 <body>
-    <ul class="wrapper">
+   <!-- <ul class="wrapper">
         <li class="item"><a>1</a></li>
         <li class="item"><a>2</a></li>
         <li class="item"><a>3</a></li>
         <li class="item"><a>4</a></li>
         <li class="item"><a>5</a></li>
         <li class="item"><a>6</a></li>
-    </ul>
-</div>
+    </ul>-->
+  <div class="wrap"></div>
 </body>
 <script type="text/javascript">
     require(['./commen/Util.js'],function(util){
@@ -71,5 +71,59 @@
                 }
             })
     });
+
+    if(!Object.getPrototypeOf){
+        Object.getPrototypeOf = function(obj){
+            var type = typeof obj;
+            if(!obj || (type != "object" && type !="function")){
+                throw new TypeError('not a object');
+            }
+
+            return obj.__proto__;
+        }
+    }
+
+    //create函数有两个参数,下面的函数只是实现只有一个参数的情况
+    if (!Object.create) {
+        Object.create = function (o) {
+            if (arguments.length > 1) {
+                throw new Error('Object.create implementation only accepts the first parameter.');
+            }
+            function F() {}
+            F.prototype = o;
+            return new F();
+        };
+    }
+
+    function User(name , password){
+        var self = this instanceof User ? this : Object.create(User.prototype);
+
+        self.name = name;
+        self.password = password;
+    }
+
+
+    function loadScript(url,callback){
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+
+        //IE支持的事件
+        if(script.readyState){
+            script.onreadystatechange = function(){
+                if(script.readyState == "loaded" || script.readyState == "completed"){
+                    script.onreadystatechange = null;
+                    callback();
+                }
+            }
+        }else{
+            //其它浏览器支持的事件
+            script.onload = function(){
+                callback();
+            }
+        }
+
+        script.src= url;
+        document.getElementsByTagName('head')[0].appendChild(script);
+    }
 </script>
 </html>
