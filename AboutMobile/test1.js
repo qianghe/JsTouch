@@ -59,7 +59,8 @@ window.onload = function () {
     });
 
     addEventListener($closeBtn, 'touchend', function (e) {
-       // e.preventDefault();
+        e.preventDefault();
+        
         $mask.className = $mask.className + ' hide';
         $pop_Win.className = $pop_Win.className + ' hide'
     });
