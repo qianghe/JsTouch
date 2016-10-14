@@ -83,3 +83,21 @@ $tableColumnWidth: (20%, 30%, 45%);
     }
   }
 }
+
+
+@mixin getPosElemMore($n){
+  &:first-child:nth-last-child(#{$n}),
+  &:first-child:nth-last-child(#{$n})~&
+  {
+    @content;
+  }
+}
+
+
+li{
+  @include getPosElemMore(4){
+    //do something
+  }
+}
+
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../commen/lib/Zepto.js" type="text/javascript"></script>
+    <script src="../commen/lib/touch.js" type="text/javascript"></script>
+</head>
+<style>
+    html {
+        font-size: calc(100vw / 3.36);
+    }
+
+    .wrap {
+        width: 100%;
+        font-size:0;
+    }
+
+    .wrap p {
+        font-size: 0.12rem;
+        color: #999;
+    }
+
+    .wrap .inputName{
+        width: 2rem;
+        line-height: 0.2rem;
+        height: 0.2rem;
+        padding: 0.1rem;
+        border: 1px solid #999;
+
+    }
+
+    .wrap .inputName:focus{
+        outline: none;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .mask{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 1;
+    }
+    .popWin {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        margin: 0 auto;
+
+
+        border: 1px solid #a0a0a0;
+        border-radius: 0.1rem;
+        background-color: #fff;
+        font-size:0.2rem;
+        z-index: 2;
+    }
+
+    .popWin > div{
+        width: 100%;
+    }
+
+    .popWin_title {
+        position: relative;
+        line-height: 0.5rem;
+        padding-left: 0.1rem;
+        box-sizing:  border-box;
+        border-bottom: 1px solid #a0a0a0;
+        font-size: 0.24rem;
+    }
+
+    .popWin_CloseBtn {
+        position: absolute;
+        right: 0.1rem;
+        color: #000;
+    }
+
+    .popWin_CloseBtn:after {
+        content: 'X';
+        font-size: 0.18rem;
+    }
+    .popWin_content{
+        padding: 0.1rem;
+        line-height: 0.2rem;
+    }
+    .popWin_Btns{
+        font-size: 0;
+    }
+    button{
+        width: 50%;
+        height: 0.3rem;
+        font-size: 0.2rem;
+        color: #fff;
+        border: none;
+
+    }
+    .cancel_Btn{
+        background-color: #a0a0a0;
+        border-bottom-left-radius: 0.1rem;
+    }
+    .sure_Btn{
+        background-color: orchid;
+        border-bottom-right-radius: 0.1rem;
+    }
+    .click_Btn{
+        background-color: yellowgreen;
+        margin-top: 0.2rem;
+    }
+
+</style>
+<body>
+<div class="wrap">
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p>
+    <p>今天是个好天气，可以吃很多好吃的</p><input class="inputName"/>
+    <button class="click_Btn">Click me</button>
+</div>
+<div class="mask hide"></div>
+<div class="popWin hide">
+    <div class="popWin_title">
+        <span>Title</span>
+        <span class="popWin_CloseBtn"></span>
+    </div>
+    <div class="popWin_content">
+        <p>爱吃的人才有好运气</p>
+        <p>爱吃的人才有好运气</p>
+        <p>爱吃的人才有好运气</p>
+        <p>爱吃的人才有好运气</p>
+        <p>爱吃的人才有好运气</p>
+    </div>
+    <div class="popWin_Btns">
+        <button class="cancel_Btn">Cancel</button>
+        <button class="sure_Btn">Sure</button>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="test1.js"></script>
+</html>
