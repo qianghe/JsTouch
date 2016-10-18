@@ -1,0 +1,72 @@
+body, p, h1 ~ h5, ul {
+  padding: 0;
+  margin: 0; }
+
+ul {
+  list-style: none; }
+
+.clearfix {
+  zoom: 1; }
+  .clearfix:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+    overflow: hidden; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  box-sizing: border-box; }
+
+.orderList,
+.orderList-fixed {
+  border: 1px solid #999;
+  padding: 20px;
+  width: 690px;
+  box-sizing: border-box; }
+  .orderList li,
+  .orderList-fixed li {
+    float: left;
+    line-height: 13px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #a0a0a0;
+    text-align: center;
+    cursor: pointer; }
+    .orderList li:hover,
+    .orderList-fixed li:hover {
+      color: red; }
+
+.orderList-fixed {
+  display: none;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0 2px #eee;
+  background-color: #a0a0a0; }
+  .orderList-fixed li:hover {
+    color: #fff; }
+
+.orderListContent {
+  width: 690px; }
+  .orderListContent > div {
+    width: 100%;
+    margin-bottom: 15px; }
+  .orderListContent h3 {
+    padding: 10px;
+    margin: 0; }
+
+.item {
+  float: left;
+  width: 48%;
+  height: 100px;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  border: 1px solid orangered; }
+
+.active {
+  background-color: orangered; }
+
+/*# sourceMappingURL=fixedScroll.css.map */
